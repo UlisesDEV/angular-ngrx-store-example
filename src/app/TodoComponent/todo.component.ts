@@ -12,12 +12,12 @@ interface AppState {
 })
 export class TodoComponent implements OnInit {
   public tasks = [
-    { text: "Tarea 1 - Enterprise 1", done: false, enterprise: 1 },
-    { text: "Tarea 2 - Enterprise 1", done: false, enterprise: 1 },
-    { text: "Tarea 3 - Enterprise 2", done: false, enterprise: 2 },
-    { text: "Tarea 4 - Enterprise 2", done: false, enterprise: 2 },
-    { text: "Tarea 5 - Enterprise 3", done: false, enterprise: 3 },
-    { text: "Tarea 6 - Enterprise 3", done: false, enterprise: 3 }
+    { text: "Task 1 - Enterprise 1", done: false, enterprise: 1 },
+    { text: "Task 2 - Enterprise 1", done: false, enterprise: 1 },
+    { text: "Task 3 - Enterprise 2", done: false, enterprise: 2 },
+    { text: "Task 4 - Enterprise 2", done: false, enterprise: 2 },
+    { text: "Task 5 - Enterprise 3", done: false, enterprise: 3 },
+    { text: "Task 6 - Enterprise 3", done: false, enterprise: 3 }
   ];
 
   public filteredTasks = [];

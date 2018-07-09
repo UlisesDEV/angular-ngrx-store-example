@@ -1,5 +1,5 @@
 <h1>List component</h1>
-<h2>Selected enterprise: {{ selectedEnterprise }}</h2>
+<h2>Selected enterprise: {{ selectedEnterprise > 0 ? selectedEnterprise : 'None' }}</h2>
 <mat-card *ngIf="tasks.length > 0">
 	<mat-list>
 		<mat-list-item *ngFor="let task of filteredTasks;let i = index">
