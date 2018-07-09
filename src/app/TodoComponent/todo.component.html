@@ -1,0 +1,10 @@
+<h1>List component</h1>
+<h2>Selected enterprise: {{ selectedEnterprise }}</h2>
+<mat-card *ngIf="tasks.length > 0">
+	<mat-list>
+		<mat-list-item *ngFor="let task of filteredTasks;let i = index">
+			<mat-divider *ngIf="i != 0"></mat-divider>
+			<span [ngClass]="{done:task.done}">{{task.text}}</span>
+		</mat-list-item>
+	</mat-list>
+</mat-card>
